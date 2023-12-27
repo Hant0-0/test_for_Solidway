@@ -11,6 +11,7 @@
 2. Create a virtual environment and activate it:
 
     ```bash
+    cd test_for_Solidway
     python -m venv venv
     venv\Scripts\activate
     ```
@@ -20,19 +21,21 @@
     ```bash
     pip install -r requirements.txt
     ```
+   
+4. Go to the `core` directory:
 
-4. Perform migrations to create a database:
+    ```bash
+    cd core
+    ```
+
+5. Perform migrations to create a database:
 
     ```bash
     python manage.py makemigrations
     python manage.py migrate
     ```
 
-5. Go to the `core` directory:
 
-    ```bash
-    cd core
-    ```
 
 6. Load the test data into the database:
 
